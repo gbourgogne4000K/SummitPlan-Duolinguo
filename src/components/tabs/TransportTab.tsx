@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Plus, Plane, Train, Bus, Car, Trash2, ArrowRight } from 'lucide-react'
+import { Plus, Plane, Brain as Train, Bus, Car, Trash2, ArrowRight } from 'lucide-react'
 import { supabase } from '../../lib/supabase'
 
 interface TransportTicket {
