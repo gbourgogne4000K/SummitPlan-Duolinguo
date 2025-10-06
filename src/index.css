@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-duo-bg text-duo-dark font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  /* Boutons style Duolingo */
+  .btn-duo {
+    @apply px-6 py-3 rounded-2xl font-bold text-base transition-all shadow-duo hover:shadow-duo-hover active:translate-y-1 active:shadow-none;
+  }
+
+  .btn-duo-primary {
+    @apply btn-duo bg-duo-green text-white border-b-4 border-green-700 hover:bg-green-500;
+  }
+
+  .btn-duo-secondary {
+    @apply btn-duo bg-duo-blue text-white border-b-4 border-blue-700 hover:bg-blue-500;
+  }
+
+  .btn-duo-danger {
+    @apply btn-duo bg-duo-red text-white border-b-4 border-red-700 hover:bg-red-500;
+  }
+
+  .btn-duo-yellow {
+    @apply btn-duo bg-duo-yellow text-duo-dark border-b-4 border-yellow-600 hover:bg-yellow-400;
+  }
+
+  .btn-duo-outline {
+    @apply btn-duo bg-white text-duo-blue border-2 border-duo-blue hover:bg-blue-50;
+  }
+
+  /* Cartes style Duolingo */
+  .card-duo {
+    @apply bg-white rounded-2xl p-5 shadow-duo border-2 border-gray-200 hover:border-duo-blue transition-all;
+  }
+
+  .card-duo-active {
+    @apply card-duo border-duo-blue bg-blue-50;
+  }
+
+  /* Input style Duolingo */
+  .input-duo {
+    @apply w-full px-4 py-3 rounded-2xl border-2 border-gray-300 focus:border-duo-blue focus:outline-none text-base transition-all;
+  }
+
+  /* Badge style Duolingo */
+  .badge-duo {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-bold;
+  }
+
+  .badge-green {
+    @apply badge-duo bg-duo-green text-white;
+  }
+
+  .badge-blue {
+    @apply badge-duo bg-duo-blue text-white;
+  }
+
+  .badge-yellow {
+    @apply badge-duo bg-duo-yellow text-duo-dark;
+  }
+
+  .badge-purple {
+    @apply badge-duo bg-duo-purple text-white;
+  }
+
+  .badge-orange {
+    @apply badge-duo bg-duo-orange text-white;
+  }
+
+  .badge-gray {
+    @apply badge-duo bg-gray-200 text-duo-dark;
+  }
+
+  /* Progress bar style Duolingo */
+  .progress-duo {
+    @apply w-full h-4 bg-gray-200 rounded-full overflow-hidden;
+  }
+
+  .progress-duo-bar {
+    @apply h-full bg-duo-green rounded-full transition-all duration-300;
+  }
+}
