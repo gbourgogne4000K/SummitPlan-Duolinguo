@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Plus, Mountain, MapPin, Calendar, Trash2, Edit } from 'lucide-react'
+import { Plus, Mountain, MapPin, Calendar, Trash2 } from 'lucide-react'
 import { supabase } from '../../lib/supabase'
 
 interface Summit {

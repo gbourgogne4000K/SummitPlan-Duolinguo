@@ -8,7 +8,6 @@ import {
   DollarSign,
   MapPin,
   Calendar,
-  MoreVertical,
 } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 import SummitsTab from './tabs/SummitsTab'

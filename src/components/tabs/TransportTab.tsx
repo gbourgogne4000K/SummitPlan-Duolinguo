@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Plus, Plane, Train, Bus, Car, Calendar, Clock, Trash2, ArrowRight } from 'lucide-react'
+import { Plus, Plane, Train, Bus, Car, Trash2, ArrowRight } from 'lucide-react'
 import { supabase } from '../../lib/supabase'
 
 interface TransportTicket {
@@ -265,7 +265,7 @@ export default function TransportTab({ tripId }: TransportTabProps) {
         )
       ) : (
         <div className="space-y-3">
-          {tickets.map((ticket, index) => {
+          {tickets.map((ticket) => {
             const config = getTransportConfig(ticket.type)
             const Icon = config.icon
             return (

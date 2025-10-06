@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Plus, DollarSign, Calendar, Trash2, TrendingUp } from 'lucide-react'
+import { Plus, DollarSign, Trash2, TrendingUp } from 'lucide-react'
 import { supabase } from '../../lib/supabase'
 
 interface Expense {
@@ -33,7 +33,7 @@ export default function ExpensesTab({ tripId }: ExpensesTabProps) {
   const [expenses, setExpenses] = useState<Expense[]>([])
   const [loading, setLoading] = useState(true)
   const [showForm, setShowForm] = useState(false)
-  const [homeCurrency, setHomeCurrency] = useState('EUR')
+  const [homeCurrency] = useState('EUR')
   const [filterCategory, setFilterCategory] = useState<string>('all')
   const [formData, setFormData] = useState({
     date: new Date().toISOString().split('T')[0],

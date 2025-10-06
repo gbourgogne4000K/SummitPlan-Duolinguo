@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Plus, Mountain, Plane, Calendar, MapPin } from 'lucide-react'
+import { Plus, Mountain, Plane, Calendar } from 'lucide-react'
 import { supabase } from '../lib/supabase'
 import { format } from 'date-fns'
 import CreateTripModal from './CreateTripModal'
